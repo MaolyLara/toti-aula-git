@@ -2,9 +2,13 @@
 <html>
 <head>
     <title>Oi Gente! Aqui a Maoly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+      
     <style>
         body {
             font-family: 'Inconsolata', monospace;
+            background-color: #515151;
         }
         
         .container {
@@ -13,6 +17,12 @@
             padding: 20px;
         }
         
+        .separator {
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+
         .profile-image {
             max-width: 200px;
             border-radius: 50%;
@@ -31,14 +41,25 @@
         .social-links {
             margin-top: 20px;
         }
-        
+
         .social-links a {
             display: inline-block;
             margin-right: 10px;
+            color: #000;
+            transition: color 0.3s ease; 
         }
-        
+
         .social-links img {
-            max-width: 30px;  
+            max-width: 40px;
+            vertical-align: middle;
+            filter: invert(100%);
+            transition: filter 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #fff; 
+        }
+        .social-links a:hover img {
+            filter: invert(0%);
         }
     </style>
 </head>
@@ -46,11 +67,31 @@
     <div class="container">
         <img class="profile-image" src="https://media.licdn.com/dms/image/D4D03AQFfl2lG0PeGVQ/profile-displayphoto-shrink_200_200/0/1681566101866?e=1692230400&v=beta&t=P_5Z1IQPxOep-mMK1EGAVSpRi6DbaF_fwZOYEpHGRaM" alt="Minha Foto Pessoal da Maoly Lara">
         <h1 class="name">Maoly Lara</h1>
-        <p class="description">Sou um Developer</p>
+        <i class="fas fa-laptop-code"></i>
+        <i class="fas fa-bug"></i>
+        <i class="fas fa-chart-line"></i>
+        <i class="fas fa-rocket"></i>
+        <div class="separator"></div>
+        <p class="description">Sou um desenvolvedor, apaixonado pela qualidade, pelos dados e pela agilidade.</p>
+        <div class="separator"></div>
         
         <div class="social-links">
-            <a href="https://github.com/MaolyLara"> Github</a>
-            <a href="https://www.linkedin.com/in/MaolyLara">Linkedin</a>
+            <p>
+                Visite o meu perfil no GitHub:
+                <a href="https://github.com/MaolyLara" target="_blank">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </p>
+              
+              <p>
+                Conecte-se comigo no LinkedIn:
+                <a href="https://www.linkedin.com/in/MaolyLara" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+                </a>
+              </p>
+              
         </div>
     </div>
 </body></html>
