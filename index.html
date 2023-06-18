@@ -102,5 +102,15 @@
                 </a>
               </p>              
         </div>
+        <div>
+            <audio id="backgroundMusic" src="https://open.spotify.com/intl-pt/track/4uXQXq2AH6mAB8gvTzNUab?si=99227ada083c4262" loop></audio>
+        </div>
     </div>
+    <script>
+        // Inicia a música de fundo quando a página carregar
+        window.addEventListener("load", function() {
+            var backgroundMusic = document.getElementById("backgroundMusic");
+            backgroundMusic.play();
+        });
+    </script>
 </body></html>
